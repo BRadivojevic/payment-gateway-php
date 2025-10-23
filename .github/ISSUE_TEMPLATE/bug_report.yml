@@ -1,0 +1,16 @@
+name: "Bug report"
+description: Report a reproducible problem
+title: "[Bug] <short title>"
+labels: ["bug"]
+body:
+  - type: textarea
+    id: summary
+    attributes: { label: Summary, description: What happened vs expected? }
+    validations: { required: true }
+  - type: textarea
+    id: steps
+    attributes: { label: Steps to Reproduce, placeholder: "1. …\n2. …" }
+    validations: { required: true }
+  - type: input
+    id: env
+    attributes: { label: Environment, placeholder: "PHP 8.2, Nginx/Apache" }
